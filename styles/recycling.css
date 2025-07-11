@@ -1,0 +1,152 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background: url('../assests/images/path.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2D4E46;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 40px;
+    background-color: white;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #C5DCC4;
+    padding: 8px 16px;
+    color: #2D4E46;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #a4c4a4;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 70px 20px 60px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-family: 'Piazzolla', serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 30px;
+    animation: popIn 1s ease-out;
+  }
+  
+
+  .test {
+    font-family: 'Piazzolla', serif ;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: slideUp 1.2s ease-in-out forwards;
+  }
+  
+  
+
+  .path-options {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    flex-wrap: wrap;
+    animation: slideUp 1.5s ease-in-out;
+  }
+  
+  .option {
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .option:hover {
+    transform: scale(1.05);
+  }
+  
+  .label {
+    background-color: #C5DCC4;
+    font-weight: 800;
+    font-size: 1.8em;
+    padding: 10px 20px;
+    color: #2D4E46;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: inline-block;
+  }
+  
+  .label:hover {
+    background-color: #a4c4a4;
+  }
+  
+
+  footer {
+    background-color: white;
+    text-align: right;
+    padding: 10px 40px;
+    font-weight: bold;
+    margin-top: auto;
+  }
+  
+  .contact {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact:hover {
+    color: #2a7c3d;
+  }
+  
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  

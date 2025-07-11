@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('../assests/images/signin.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2D4E46;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Footer fix */
+}
+
+main {
+  flex: 1; /* Pushes footer down */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 40px;
+  background-color: white;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #C5DCC4;
+  padding: 8px 16px;
+  color: #2D4E46;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #a4c4a4;
+}
+
+.signin-container {
+  text-align: center;
+  margin-top: 35px;
+  animation: fadeInUp 1s ease;
+}
+
+.signin-container h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  animation: popIn 1s ease-in;
+}
+
+.signin-box {
+  background-color: #C5DCC4;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: left;
+  animation: fadeInUp 1.5s ease;
+  margin-bottom: 15px;
+}
+
+.signin-box label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.signin-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.signin-box button {
+  background-color: #2D4E46;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.signin-box button:hover {
+  background-color: #25563d;
+  transform: scale(1.02);
+}
+
+footer {
+  text-align: right;
+  padding: 10px 40px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.contact {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact:hover {
+  color: #2a7c3d;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

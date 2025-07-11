@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantify - Recycling Tutorials</title>
+    <link rel="stylesheet" href="styles/recyclingtut.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assests/icons/PLANTIFY2.png" alt="Plantify Logo" />
+        </div>
+        <nav>
+            <a href="feed.html">Feed</a>
+            <a href="paths.html">Paths</a>
+            <a href="end.html">About us</a>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <main id="container">
+        <!-- Section 1 -->
+        <section class="screen">
+            <h1 class="tutorial-title">How to make watering system</h1>
+            <div class="video-container">
+                <a href="https://www.youtube.com/watch?v=IOb0R7tObD0" target="_blank">
+                    <img src="assests/images/v11.png" alt="Watering system" class="video-thumb" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=IOb0R7tObD0" class="click-button">Click here</a>
+            </div>
+            <div style="margin-top: 75px;"></div>
+            <div class="arrow down" onclick="scrollToSection(1)">↓</div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="screen">
+            <h1 class="tutorial-title">How to make compost out of waste</h1>
+            <div class="video-container">
+                <a href="https://www.youtube.com/watch?v=zy70DAaeFBI" target="_blank">
+                    <img src="assests/images/v22.png" alt="Compost tutorial" class="video-thumb" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=zy70DAaeFBI" class="click-button">Click here</a>
+            </div>
+            <div style="margin-top: 75px;"></div>
+            <div class="arrow up" onclick="scrollToSection(0)">↑</div>
+            <div class="arrow down" onclick="scrollToSection(2)">↓</div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="screen">
+            <h1 class="tutorial-title">How to make pots out of plastic bottles</h1>
+            <div class="video-container">
+                <a href="https://www.youtube.com/watch?v=abgC3CPSq1E" target="_blank">
+                    <img src="assests/images/v33.png" alt="Pots from bottles" class="video-thumb" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=abgC3CPSq1E" class="click-button">Click here</a>
+            </div>
+            <div class="arrow up" onclick="scrollToSection(1)">↑</div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBih4YYMIZ4JWXRodDfOkQJj52zYRq03ZAn5Rxj2pueXQn-g/viewform"
+            class="contact">Contact us!</a>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const sections = document.querySelectorAll('.screen');
+        function scrollToSection(index) {
+            if (sections[index]) {
+                sections[index].scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

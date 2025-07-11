@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  
+  body {
+    background: url('../assests/images/feed.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2D4E46;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 40px;
+    background-color: white;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #C5DCC4;
+    padding: 8px 16px;
+    color: #2D4E46;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #a4c4a4;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 60px;
+    min-height: 70vh;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-left {
+    max-width: 700px;
+    text-align:center;
+    animation: slideUp 1.4s ease;
+  }
+  
+  .hero-left h1 {
+    font-family: 'Piazzolla', serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 30px;
+    animation: popIn 1s ease-in-out;
+  }
+  
+  .hero-left p {
+    color: #42634B;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .get-started {
+    background-color: #C5DCC4;
+    color: #2D4E46;
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    animation: fadeInUp 1.8s ease-in-out;
+  }
+  
+  .get-started:hover {
+    background-color: #a5c9aa;
+    transform: scale(1.05);
+  }
+  
+  
+  
+  footer {
+    background-color: white;
+    text-align: right;
+    padding: 10px 40px;
+    font-weight: bold;
+  }
+  
+  .contact {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact:hover {
+    color: #2a7c3d;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
