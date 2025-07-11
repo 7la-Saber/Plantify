@@ -62,12 +62,12 @@
   
   .hero h1 {
     font-size: 3em;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     font-weight: 800;
     animation: popIn 1s ease-out;
     font-family: 'Piazzolla', serif;
     font-weight: 700;
-    font-size: 85px;
+    font-size: 80px;
   }
   
   .path-options {
